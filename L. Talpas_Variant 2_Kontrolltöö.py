@@ -2,6 +2,8 @@
 
 '''Ülesanne 1'''
 
+
+#Ülesandest valesti aru saadud!
 '''def elements_sum(N):
     # alustuseks oletame, et N=0
     theSum = 0
@@ -9,9 +11,26 @@
     # liidame järjendile otsa järgmise arvu
         theSum = theSum + i
     # liidab kokku kõik numbrid ja tagastab vastuse
-    return theSum
+    return theSum'''
 
-print(elements_sum([1,2,3,4]))'''
+#Mina oleks lahendanud seda ül niimoodi:
+#funktsioon võtab sisend täisarvu N ja annab vastuseks numbrite 1 kuni N summa
+def elements_sum(N):
+    #kõige pealt kasutan N-i absoluutväärtust (nt. -5, muudab 5ks)
+    from math import fabs
+    N=fabs(N)
+    tulemus=0
+    # kasutan stüklit. Võtab arvu, lahutab ühe ja liidab eelmise arvuga. Kuni 0ni
+    while N>=0:
+        tulemus=tulemus+N
+        N=N-1
+    return tulemus
+        
+    
+print(elements_sum(-5))
+
+
+
 
 '''Ülesanne 2'''
 
@@ -28,11 +47,11 @@ print(time_convert('13:37'))'''
 
 '''Ülesanne 3'''
 
-def sort_values(string):
+'''def sort_values(string):
     for i in string.split(','):
         list_sorted = sorted([i for i in string if str(i).isdigit()]) + sorted([i for i in string if not str(i).isdigit()])
     return list_sorted
-print(sort_values(str("2,a,54,v,y,8")))
+print(sort_values(str("2,a,54,v,y,8")))'''
 
 '''# Kuna ei saanud 3.-ndat ülesannet funktsioonina tööle, siis proovisin teha niisama nagu allpool ja siis töötas:
 sort_values=str("2,a,54,v,y,8")
