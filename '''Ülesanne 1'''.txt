@@ -1,0 +1,12 @@
+'''Ülesanne 1'''
+
+'''def elements_sum(N):
+    # alustuseks oletame, et N=0
+    theSum = 0
+    for i in N:
+    # liidame järjendile otsa järgmise arvu
+        theSum = theSum + i
+    # liidab kokku kõik numbrid ja tagastab vastuse
+    return theSum
+
+print(elements_sum([1,2,3,4]))'''
